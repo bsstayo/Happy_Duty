@@ -1,0 +1,119 @@
+html{
+  width: 520px;
+  overflow: hidden;
+  overflow-y: overlay;
+}
+
+body{
+  font-family: 'NanumSquareR';
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  font-size: 22px;
+  padding-inline-start: 10px;
+  margin-top: 0px;
+}
+
+li{
+  margin-bottom: 15px;
+}
+
+h1, h2, h3{
+  margin: 5px;
+}
+
+input[type="checkbox" i]{
+  width: 18px;
+  height: 18px;
+  margin: 10px;
+}
+
+#headhead{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 500px;
+  height: fit-content;
+  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#headline{
+  text-align: center;
+  background: #cfffff;
+  width: 500px;
+  margin: 0 0 0 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 22px;
+}
+
+#center_elements{
+  background-color: black;
+  color: red;
+  width: 500px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#day_select{
+  width: 500px;
+  text-align: center;
+}
+
+#day_select button{
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 70px;
+}
+
+#day_select button:hover, button:focus{
+  background-color: #2980B9;
+  color: white;
+}
+
+#bodybody{
+  background-color: #dfdfdf;
+  padding-top: 290px;
+  padding-bottom: 5px;
+  width: 500px;
+}
+
+#divider{
+  text-align: center;
+}
+
+#mail_example, #mail_example_1, #mail_example_2, #mail_example_3, #mail_example_4{
+  background-color: #ffffff;
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-left: 25px;
+  width: 400px;
+  font-size: 15px;
+  font-family: Gulim, AppleGothic;
+}
+
+#footer{
+  background-color: #3f3f3f;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 500px;
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}

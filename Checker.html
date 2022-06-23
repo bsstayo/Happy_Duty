@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html" charset="utf-8">
+    <title>Checker</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <body>
+      <div class="headhead">
+        <h1 id="headline">Happy Duty Time :)</h1>
+
+        <div id="center_elements">
+          <h1 id="current_clock"></h1>
+          <h1 id="remain_clock"></h1>
+          <!--<h1 id="test"></h1>-->
+          <script src="src/clock.js" charset="utf-8"></script>
+        </div>
+
+        <div id="day_select">
+          <button onclick="upload_forced(1)">Normal</button>
+          <button onclick="upload_forced(5)">Fri</button>
+          <button onclick="upload_forced(6)">Sat</button>
+          <button onclick="upload_forced(0)">Sun</button>
+          <button onclick="upload_today()">Today</button>
+          <button onclick="resetCheck()">Reset</button>
+        </div>
+      </div>
+
+      <div id="bodybody">
+        <ul>
+          <li id="divider">=========START!=========</li>
+          <li class="weekend"><input type="checkbox" id="ch_0" onclick="uploadStorage('ch_0')">Do Something - Weekend</li>
+          <li><input type="checkbox" id="ch_1" onclick="uploadStorage('ch_1')">Do Something</li>
+          <li><input type="checkbox" id="ch_2" onclick="uploadStorage('ch_2')">Do Something</li>
+          <li id="mail_example_1"></li>
+          <li class="weekend"><input type="checkbox" id="ch_3" onclick="uploadStorage('ch_3')">Do Something - Weekend</li>
+          <li class="weekend"><input type="checkbox" id="ch_4" onclick="uploadStorage('ch_4')">Do Something - Weekend</li>
+          <li class="hide saturday"><input type="checkbox" id="ch_5" onclick="uploadStorage('ch_5')">Do Something</li>
+          <li class="weekend"><input type="checkbox" id="ch_6" onclick="uploadStorage('ch_6')">Do Something - Weekend</li>
+
+          <li id="divider" class="weekend">=========DIVIDER=========</li>
+          <li class="weekend"><input type="checkbox" id="ch_7" onclick="uploadStorage('ch_7')">Do Something - Weekend</li>
+          <li class="weekend"><input type="checkbox" id="ch_8" onclick="uploadStorage('ch_8')">Do Something - Weekend</li>
+          <!--<li><input type="checkbox">Do Something - Weekend</li>-->
+          <li class="weekend friday"><input type="checkbox" id="ch_9" onclick="uploadStorage('ch_9')">Do Something - Friday/Weekend</li>
+
+          <li id="divider" class="weekend">=========DIVIDER=========</li>
+          <li><input type="checkbox" id="ch_10" onclick="uploadStorage('ch_10')">Do Something</li>
+          <li><input type="checkbox" id="ch_11" onclick="uploadStorage('ch_11')">Do Something</li>
+          <li><input type="checkbox" id="ch_12" onclick="uploadStorage('ch_12')">Do Something</li>
+          <li><input type="checkbox" id="ch_13" onclick="uploadStorage('ch_13')">Do Something</li>
+          <li><input type="checkbox" id="ch_14" onclick="uploadStorage('ch_14')">Do Something</li>
+          <li><input type="checkbox" id="ch_15" onclick="uploadStorage('ch_15')">Do Something</li>
+          <li><input type="checkbox" id="ch_16" onclick="uploadStorage('ch_16')">Do Something</li>
+          <li><input type="checkbox" id="ch_17" onclick="uploadStorage('ch_17')">Do Something</li>
+          <li><input type="checkbox" id="ch_18" onclick="uploadStorage('ch_18')">Do Something</li>
+
+          <li id="divider">=========DIVIDER=========</li>
+          <li><input type="checkbox" id="ch_19" onclick="uploadStorage('ch_19')">Do Something</li>
+          <li><input type="checkbox" id="ch_20" onclick="uploadStorage('ch_20')">Do Something</li>
+          <!--<li><input type="checkbox">Do Something</li>-->
+          <li><input type="checkbox" id="ch_21" onclick="uploadStorage('ch_21')">Do Something</li>
+          <!--<li><input type="checkbox">Do Something</li>-->
+          <!--<li id="mail_example"><br>Title<br>
+            <br>
+            Hello!<br>
+            <br>
+            This is example text<br>
+            <br>
+            Thanks!<br>
+            <br>
+            Sincerely,<br>
+            <br>
+            Kim<br>
+          </li>-->
+          <li><input type="checkbox" id="ch_22" onclick="uploadStorage('ch_22')">Do Something</li>
+          <li id="mail_example_2"></li>
+
+          <li id="divider">=========DIVIDER=========</li>
+          <li><input type="checkbox" id="ch_23" onclick="uploadStorage('ch_23')">Do Something</li>
+          <li class="nd_normalweek"><input type="checkbox" id="ch_24" onclick="uploadStorage('ch_24')">Do Something - Next Day Weekday</li>
+          <li class="nd_weekend"><input type="checkbox" id="ch_25" onclick="uploadStorage('ch_25')">Do Something - Next Day Weekend</li>
+          <li class="nd_normalweek"><input type="checkbox" id="ch_26" onclick="uploadStorage('ch_26')">Do Something - Next Day Weekday</li>
+          <li class="nd_weekend"><input type="checkbox" id="ch_27" onclick="uploadStorage('ch_27')">Do Something - Next Day Weekend</li>
+          <li><input type="checkbox" id="ch_28" onclick="uploadStorage('ch_28')">Do Something</li>
+          <li id="mail_example_3"></li>
+
+          <li id="divider">=========DIVIDER=========</li>
+          <li class="nd_normalweek"><input type="checkbox" id="ch_29" onclick="uploadStorage('ch_29')">Do Something - Next Day Weekday</li>
+          <li class="nd_weekend"><input type="checkbox" id="ch_30" onclick="uploadStorage('ch_30')">Do Something - Next Day Weekend</li>
+          <li class="nd_normalweek"><input type="checkbox" id="ch_31" onclick="uploadStorage('ch_31')">Do Something - Next Day Weekday</li>
+          <li class="nd_weekend"><input type="checkbox" id="ch_32" onclick="uploadStorage('ch_32')">Do Something - Next Day Weekend</li>
+          <li class="nd_normalweek"><input type="checkbox" id="ch_33" onclick="uploadStorage('ch_33')">Do Something - Next Day Weekday</li>
+          <li class="nd_weekend"><input type="checkbox" id="ch_34" onclick="uploadStorage('ch_34')">Do Something - Next Day Weekend</li>
+          <li class="nd_normalweek"><input type="checkbox" id="ch_35" onclick="uploadStorage('ch_35')">Do Something - Next Day Weekday</li>
+          <li class="nd_weekend"><input type="checkbox" id="ch_36" onclick="uploadStorage('ch_36')">Do Something - Next Day Weekend</li>
+          <li class="nd_normalweek"><input type="checkbox" id="ch_37" onclick="uploadStorage('ch_37')">Do Something - Next Day Weekday</li>
+          <li class="nd_weekend"><input type="checkbox" id="ch_38" onclick="uploadStorage('ch_38')">Do Something - Next Day Weekend</li>
+          <li id="mail_example_4"></li>
+          <li class="nd_weekend"><input type="checkbox" id="ch_39" onclick="uploadStorage('ch_39')">Do Something - Next Day Weekend</li>
+        </ul>
+      </div>
+
+      <div id="footer">
+        <a>I made this for fun, but thanks to all who use this!</a>
+        <br>
+        <a>Copyright ⓒ Sergent Kim. All Rights Reserved.</a>
+      </div>
+
+      <script src="src/date.js" charset="utf-8"></script>
+      <script src="src/localStorage.js" charset="utf-8"></script>
+      <script type="text/javascript">
+        //alert("<22.00.00. Updated Content\n
+        0.Checklist changes automatically to match the day\n
+        1.Checks can be saved even if it turned off\n
+        2.Fixed Time banner\n
+        3.Minor design change")
+      </script>
+
+  </body>
+</html>
